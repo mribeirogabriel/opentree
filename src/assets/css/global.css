@@ -1,0 +1,22 @@
+:root {
+  --color-background: #725A7A;
+  --color-primary-lighter: #FF7682;
+  --color-primary-light: #C56C86;
+  --color-primary: #355C7D;
+  --color-text: #ffffff;
+  
+  font-size: 60%;
+
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+
+  font-family: 'Balsamiq Sans', cursive;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+svg {
+  fill: var(--color-text);
+}
