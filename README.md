@@ -37,4 +37,4 @@ const linkList = {
 }
 ```
 [![N|Solid](https://raw.githubusercontent.com/mribeirogabriel/opentree/master/src/assets/images/screen.png)](https://github.com/mribeirogabriel/opentree)
-### [Live Demo](about.izalu.com)
+### [Live Demo](https://about.izalu.com)
