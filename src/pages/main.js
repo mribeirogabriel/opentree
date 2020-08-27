@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/css/main.css'
-import photoProfile from '../assets/images/profile.png'
 
+import photoProfile from '../assets/images/profile.png'
 import instagramLogo from '../assets/images/instagram.svg'
 import twitterLogo from '../assets/images/twitter.svg'
 import youtubeLogo from '../assets/images/youtube.svg'
