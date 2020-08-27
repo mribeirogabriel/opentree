@@ -8,8 +8,10 @@ import youtubeLogo from '../assets/images/youtube.svg'
 import twitchLogo from '../assets/images/twitch.svg'
 import facebookLogo from '../assets/images/facebook.svg'
 
-const pageTitle = 'Name | Social Media Links'
 const profileName = 'Profile Name'
+const pageTitle = profileName + ' | Social Media Links'
+
+const githubLink = 'https://github.com/mribeirogabriel/opentree'
 
 const linkList = {
     'Instagram': ['https://instagram.com', instagramLogo],
@@ -25,7 +27,7 @@ function loadLinks(){
         const mediaLink = linkList[socialMedia][0]
         const logoLink = linkList[socialMedia][1]
         links.push(<div key={socialMedia} id='link'><a href={mediaLink} target='_blank' rel="noopener noreferrer">{socialMedia}</a></div>)
-        logos.push(<a key={mediaLink} href={mediaLink} target='_blank' rel="noopener noreferrer"><img src={logoLink}></img></a>)
+        logos.push(<a key={mediaLink} href={mediaLink} target='_blank' rel="noopener noreferrer"><img src={logoLink} alt={socialMedia}></img></a>)
     }
 }
 loadLinks()
@@ -35,7 +37,7 @@ function Main(){
         <title>{pageTitle}</title>
         <div id='main-container'>
             <div id='main-photo'>
-                <img src={photoProfile}></img>
+                <img src={photoProfile} alt=''></img>
                 <h3>{profileName}</h3>
             </div>
             <div id='main-links'>
@@ -45,7 +47,7 @@ function Main(){
                 {logos}
             </div>
             <div id='main-footer'>
-                FOOTER
+                <span>OpenTree </span><a href={githubLink} target='_blank' rel="noopener noreferrer">GitHub</a> {pageTitle}
             </div>
         </div>
         </>

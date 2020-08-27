@@ -1,6 +1,7 @@
 #main-container {
-    background-color: var(--color-background);
-    width: 100vw;
+    background: rgb(114,90,122);
+    background: linear-gradient(160deg, rgba(114,90,122,1) 0%, rgb(105, 48, 126) 49%, rgba(114,90,122,1) 100%);
+    width: 100%;
     height: 100vh;
     display: grid;
     justify-items: center;
@@ -11,6 +12,7 @@
     justify-items: center;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 #main-photo img {
     width: 100px;
@@ -26,6 +28,7 @@
     display: grid;
     width: 100%;
     font-size: 200%;
+    padding: 0.75em;
 }
 #link a{
     display: block;
@@ -44,15 +47,45 @@
     text-align: center;
 }
 #link a:hover{
+    color: var(--color-primary);
     background-color: var(--color-primary-light);
 }
 #main-media {
-    justify-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     color: var(--color-text);
 }
 #main-media img {
-    height: 40px;
-    width: 40px;
-    margin: 10px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;    
+}
+#main-media a:hover {
+    opacity: 0.6;
+}
+#main-footer {
+    font-size: 125%;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    color: var(--color-text);
+}
+#main-footer a {
+    text-decoration: none;
+    color: var(--color-primary-light)
+}
+@media (min-width: 700px) {
+    #main-container {
+        width: 100vw;
+        height: 100vh;
+    }
+    #main-media img {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
 }
