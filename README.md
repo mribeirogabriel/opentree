@@ -26,8 +26,6 @@ Edit links variables.
 const profileName = 'Profile Name'
 const pageTitle = profileName + ' | Social Media Links'
 
-const githubLink = 'https://github.com/mribeirogabriel/opentree'
-
 const linkList = {
     'Instagram': ['https://instagram.com', instagramLogo],
     'Twitter': ['https://twitter.com', twitterLogo],
